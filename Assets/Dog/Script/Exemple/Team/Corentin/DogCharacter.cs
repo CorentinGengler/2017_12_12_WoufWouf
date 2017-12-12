@@ -9,15 +9,16 @@ public class DogCharacter  : Dog
     public Rigidbody _Rigidbody;
     public float _force;
     public AudioSource _DogSound;
+    public SwitchBark ScriptBark; 
     #endregion
     
 
     #region Public Void
     public override void Bark(float volume, float frequence)
     {
+        ScriptBark.SwitchToNextBark();
         _DogSound.volume = volume;
         _DogSound.Play();
-
     }
 
 

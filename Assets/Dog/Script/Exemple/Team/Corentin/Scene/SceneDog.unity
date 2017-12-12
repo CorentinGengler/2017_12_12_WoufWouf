@@ -400,6 +400,7 @@ MonoBehaviour:
   _Rigidbody: {fileID: 954565208}
   _force: 0.4
   _DogSound: {fileID: 1696377256}
+  ScriptBark: {fileID: 1696377258}
 --- !u!54 &954565208
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -651,6 +652,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1696377257}
   - component: {fileID: 1696377256}
+  - component: {fileID: 1696377258}
   m_Layer: 0
   m_Name: bark
   m_TagString: Untagged
@@ -667,7 +669,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f518156c512612049bcef42c8f2d39c0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: dffd82bdf68cfeb49aacbdc0719241b5, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -751,6 +753,23 @@ Transform:
   m_Father: {fileID: 254863528}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1696377258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1696377255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a0720719d8a6945bdc82df763047f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListOfBarks:
+  - {fileID: 8300000, guid: dffd82bdf68cfeb49aacbdc0719241b5, type: 3}
+  - {fileID: 8300000, guid: 82756a7027a49fa4ab4615d2df61d22a, type: 3}
+  - {fileID: 8300000, guid: 338d15da62b4e5b4ab07b7d281d988b9, type: 3}
+  - {fileID: 8300000, guid: 72fc8ca4dc9bca1448c49624342509bc, type: 3}
+  m_audioSourceOfBark: {fileID: 1696377256}
 --- !u!1 &1925985075
 GameObject:
   m_ObjectHideFlags: 0
